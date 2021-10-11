@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    const promise1 = fetch('https://api.punkapi.com/v2/beers/1');
+    const promise2 = promise1.then(function(response) {
+    //Read on to learn which information you can get from this response object
+    return response.json();
+    })
+    promise2.then(function(data) {
+    console.log(data);
+    });
+
+
+</script>
